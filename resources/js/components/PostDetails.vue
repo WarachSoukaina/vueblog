@@ -224,34 +224,14 @@
                 </a>
               </div>
             </div><!-- End Video -->
+          
+          <Categories></Categories>
 
-            <div class="aside-block">
-              <h3 class="aside-title">Categories</h3>
-              <ul class="aside-links list-unstyled">
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Business</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Culture</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Sport</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Food</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Politics</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Celebrity</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Startups</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Travel</a></li>
-              </ul>
-            </div><!-- End Categories -->
+          <!-- End Categories -->
 
-            <div class="aside-block">
-              <h3 class="aside-title">Tags</h3>
-              <ul class="aside-tags list-unstyled">
-                <li><a href="category.html">Business</a></li>
-                <li><a href="category.html">Culture</a></li>
-                <li><a href="category.html">Sport</a></li>
-                <li><a href="category.html">Food</a></li>
-                <li><a href="category.html">Politics</a></li>
-                <li><a href="category.html">Celebrity</a></li>
-                <li><a href="category.html">Startups</a></li>
-                <li><a href="category.html">Travel</a></li>
-              </ul>
-            </div><!-- End Tags -->
+        
+        
+            <!-- End Tags -->
 
           </div>
         </div>
@@ -261,11 +241,16 @@
 </template>
 
 <script>
+import Categories from './Categories.vue';
+
 export default {
     data() {
         return {
             post : ''
         }
+    },
+    components: {
+      Categories
     },
     created() {
         axios.get('/api/posts/'+this.$route.params.slug)

@@ -1,17 +1,13 @@
 <template>
-     
-
-
-
-
-   
+     <section>
       <div class="container">
         <div class="row">
 
-  <div class="col-md-9" data-aos="fade-up">
-            <h3 class="category-title">-----slider should be here -----</h3>
+          <div class="col-md-9" data-aos="fade-up">
+            <h3 class="category-title">Category: Business</h3>
+         
 
-            <div v-for="(post, index) in posts.data" :key="index" class="d-md-flex post-entry-2 half">
+            <div v-for="(post, index) in posts" :key="index" class="d-md-flex post-entry-2 half">
               <router-link :to="post.path" class="me-4 thumbnail">
                 <img :src="post.image" alt="" class="img-fluid">
               </router-link>
@@ -44,7 +40,6 @@
               </div>
             </div>
           </div>
-       
 
           <div class="col-md-3">
             <!-- ======= Sidebar ======= -->
@@ -194,9 +189,10 @@
               </div>
             </div><!-- End Video -->
 
-                  <Categories></Categories>
-                  
-              <!-- End Categories -->
+          
+          <Categories></Categories>
+          
+          <!-- End Categories -->
 
             <div class="aside-block">
               <h3 class="aside-title">Tags</h3>
@@ -216,32 +212,41 @@
 
         </div>
       </div>
+    </section>
 </template>
 
+
 <script>
+
 import Categories from './Categories.vue';
 
-    export default {
-      data() {
-          return {
-              posts: {}
-          }
-      },
-      components : {
+export default {
+    data() {
+        return {
+            posts : []
+        }
+    },
+    components : {
         Categories
-      },
-      created() {
-          this.getPosts();
-      },
-      methods: {
-          getPosts(){
-              axios.get('/api/posts')
-              .then(response => {
-                  console.log(response.data);
-                  this.posts = response.data;
-                  })
-              .catch(err => console.log(err));
-          }
-      },
+    },
+
+    created() {
+        this.getPosts();
+    },
+    
+    methods : {
+        getPosts() {
+         axios.get(`/api/postsByCategory/${this.$route.params.slug}`)
+        .then (response => {
+            console.log( response.data);
+            this.posts = response.data;
+
+        }).catch(err =>console.log(err));
+        }
+    },
+
+    watch : {
+        '$route':'getPosts'
     }
+}
 </script>

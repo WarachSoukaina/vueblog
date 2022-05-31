@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 import Home from "../components/Home.vue";
 import PostDetails from "../components/PostDetails.vue";
+import PostsByCategory from "../components/PostsByCategory.vue";
+
 
 Vue.use(VueRouter)
 
@@ -15,8 +17,15 @@ const routes = [
     {
         path : '/post/:slug',
         component :PostDetails,
-        name : 'poostDetails'
+        name : 'postDetails'
+    },
+    {
+        path : '/postsByCategory/:slug',
+        component :PostsByCategory,
+        name : 'postsByCategory'
     }
+    
+
 ];
 
 const router = new VueRouter({

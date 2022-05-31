@@ -5255,6 +5255,54 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      categories: []
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_0___default().get('/api/categories').then(function (response) {
+      return _this.categories = response.data.categories;
+    })["catch"](function (err) {
+      return console.log(err);
+    });
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=script&lang=js& ***!
@@ -5266,6 +5314,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _Categories_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Categories.vue */ "./resources/js/components/Categories.vue");
 //
 //
 //
@@ -5486,21 +5535,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       posts: {}
     };
+  },
+  components: {
+    Categories: _Categories_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   created: function created() {
     this.getPosts();
@@ -5532,6 +5575,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _Categories_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Categories.vue */ "./resources/js/components/Categories.vue");
 //
 //
 //
@@ -5774,31 +5818,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       post: ''
     };
+  },
+  components: {
+    Categories: _Categories_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   created: function created() {
     var _this = this;
@@ -5809,6 +5837,268 @@ __webpack_require__.r(__webpack_exports__);
     })["catch"](function (err) {
       return console.log(err);
     });
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PostsByCategory.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PostsByCategory.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Categories_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Categories.vue */ "./resources/js/components/Categories.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      posts: []
+    };
+  },
+  components: {
+    Categories: _Categories_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  created: function created() {
+    this.getPosts();
+  },
+  methods: {
+    getPosts: function getPosts() {
+      var _this = this;
+
+      axios.get("/api/postsByCategory/".concat(this.$route.params.slug)).then(function (response) {
+        console.log(response.data);
+        _this.posts = response.data;
+      })["catch"](function (err) {
+        return console.log(err);
+      });
+    }
+  },
+  watch: {
+    '$route': 'getPosts'
   }
 });
 
@@ -5904,15 +6194,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_Home_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Home.vue */ "./resources/js/components/Home.vue");
 /* harmony import */ var _components_PostDetails_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/PostDetails.vue */ "./resources/js/components/PostDetails.vue");
+/* harmony import */ var _components_PostsByCategory_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PostsByCategory.vue */ "./resources/js/components/PostsByCategory.vue");
 
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]);
+
+vue__WEBPACK_IMPORTED_MODULE_3__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]);
 var routes = [{
   path: '/',
   component: _components_Home_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -5920,9 +6212,13 @@ var routes = [{
 }, {
   path: '/post/:slug',
   component: _components_PostDetails_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
-  name: 'poostDetails'
+  name: 'postDetails'
+}, {
+  path: '/postsByCategory/:slug',
+  component: _components_PostsByCategory_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+  name: 'postsByCategory'
 }];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]({
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_4__["default"]({
   routes: routes,
   hashbang: false,
   mode: 'history'
@@ -28414,6 +28710,45 @@ component.options.__file = "resources/js/AppHome.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Categories.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/Categories.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Categories_vue_vue_type_template_id_8ceef672___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Categories.vue?vue&type=template&id=8ceef672& */ "./resources/js/components/Categories.vue?vue&type=template&id=8ceef672&");
+/* harmony import */ var _Categories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Categories.vue?vue&type=script&lang=js& */ "./resources/js/components/Categories.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Categories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Categories_vue_vue_type_template_id_8ceef672___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Categories_vue_vue_type_template_id_8ceef672___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Categories.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue":
 /*!******************************************!*\
   !*** ./resources/js/components/Home.vue ***!
@@ -28492,6 +28827,61 @@ component.options.__file = "resources/js/components/PostDetails.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/PostsByCategory.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/PostsByCategory.vue ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _PostsByCategory_vue_vue_type_template_id_60f169e6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PostsByCategory.vue?vue&type=template&id=60f169e6& */ "./resources/js/components/PostsByCategory.vue?vue&type=template&id=60f169e6&");
+/* harmony import */ var _PostsByCategory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PostsByCategory.vue?vue&type=script&lang=js& */ "./resources/js/components/PostsByCategory.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PostsByCategory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PostsByCategory_vue_vue_type_template_id_60f169e6___WEBPACK_IMPORTED_MODULE_0__.render,
+  _PostsByCategory_vue_vue_type_template_id_60f169e6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/PostsByCategory.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Categories.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/Categories.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Categories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Categories.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Categories_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue?vue&type=script&lang=js&":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/Home.vue?vue&type=script&lang=js& ***!
@@ -28524,6 +28914,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/PostsByCategory.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/PostsByCategory.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PostsByCategory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PostsByCategory.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PostsByCategory.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PostsByCategory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/AppHome.vue?vue&type=template&id=1c454f1c&":
 /*!*****************************************************************!*\
   !*** ./resources/js/AppHome.vue?vue&type=template&id=1c454f1c& ***!
@@ -28537,6 +28943,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppHome_vue_vue_type_template_id_1c454f1c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppHome_vue_vue_type_template_id_1c454f1c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AppHome.vue?vue&type=template&id=1c454f1c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/AppHome.vue?vue&type=template&id=1c454f1c&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Categories.vue?vue&type=template&id=8ceef672&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/Categories.vue?vue&type=template&id=8ceef672& ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Categories_vue_vue_type_template_id_8ceef672___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Categories_vue_vue_type_template_id_8ceef672___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Categories_vue_vue_type_template_id_8ceef672___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Categories.vue?vue&type=template&id=8ceef672& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories.vue?vue&type=template&id=8ceef672&");
 
 
 /***/ }),
@@ -28575,6 +28998,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/PostsByCategory.vue?vue&type=template&id=60f169e6&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/PostsByCategory.vue?vue&type=template&id=60f169e6& ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PostsByCategory_vue_vue_type_template_id_60f169e6___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PostsByCategory_vue_vue_type_template_id_60f169e6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PostsByCategory_vue_vue_type_template_id_60f169e6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PostsByCategory.vue?vue&type=template&id=60f169e6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PostsByCategory.vue?vue&type=template&id=60f169e6&");
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/AppHome.vue?vue&type=template&id=1c454f1c&":
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/AppHome.vue?vue&type=template&id=1c454f1c& ***!
@@ -28592,6 +29032,56 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [_c("router-view")], 1)
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories.vue?vue&type=template&id=8ceef672&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Categories.vue?vue&type=template&id=8ceef672& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "aside-block" }, [
+    _c("h3", { staticClass: "aside-title" }, [_vm._v("Categories")]),
+    _vm._v(" "),
+    _c(
+      "ul",
+      { staticClass: "aside-links list-unstyled" },
+      _vm._l(_vm.categories, function (category, index) {
+        return _c(
+          "li",
+          { key: index },
+          [
+            _c(
+              "router-link",
+              { attrs: { to: "/postsByCategory/" + category.slug } },
+              [
+                _c("i", { staticClass: "bi bi-chevron-right" }),
+                _vm._v(" \n            " + _vm._s(category.name) + " "),
+              ]
+            ),
+          ],
+          1
+        )
+      }),
+      0
+    ),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -28695,7 +29185,20 @@ var render = function () {
         2
       ),
       _vm._v(" "),
-      _vm._m(2),
+      _c(
+        "div",
+        { staticClass: "col-md-3" },
+        [
+          _vm._m(2),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("Categories"),
+          _vm._v(" "),
+          _vm._m(4),
+        ],
+        1
+      ),
     ]),
   ])
 }
@@ -28741,649 +29244,591 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-3" }, [
-      _c("div", { staticClass: "aside-block" }, [
-        _c(
-          "ul",
-          {
-            staticClass: "nav nav-pills custom-tab-nav mb-4",
-            attrs: { id: "pills-tab", role: "tablist" },
-          },
-          [
-            _c(
-              "li",
-              { staticClass: "nav-item", attrs: { role: "presentation" } },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass: "nav-link active",
-                    attrs: {
-                      id: "pills-popular-tab",
-                      "data-bs-toggle": "pill",
-                      "data-bs-target": "#pills-popular",
-                      type: "button",
-                      role: "tab",
-                      "aria-controls": "pills-popular",
-                      "aria-selected": "true",
-                    },
-                  },
-                  [_vm._v("Popular")]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              { staticClass: "nav-item", attrs: { role: "presentation" } },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass: "nav-link",
-                    attrs: {
-                      id: "pills-trending-tab",
-                      "data-bs-toggle": "pill",
-                      "data-bs-target": "#pills-trending",
-                      type: "button",
-                      role: "tab",
-                      "aria-controls": "pills-trending",
-                      "aria-selected": "false",
-                    },
-                  },
-                  [_vm._v("Trending")]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              { staticClass: "nav-item", attrs: { role: "presentation" } },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass: "nav-link",
-                    attrs: {
-                      id: "pills-latest-tab",
-                      "data-bs-toggle": "pill",
-                      "data-bs-target": "#pills-latest",
-                      type: "button",
-                      role: "tab",
-                      "aria-controls": "pills-latest",
-                      "aria-selected": "false",
-                    },
-                  },
-                  [_vm._v("Latest")]
-                ),
-              ]
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "tab-content", attrs: { id: "pills-tabContent" } },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "tab-pane fade show active",
-                attrs: {
-                  id: "pills-popular",
-                  role: "tabpanel",
-                  "aria-labelledby": "pills-popular-tab",
-                },
-              },
-              [
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "How to Avoid Distraction and Stay Focused During Video Calls?"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "9 Half-up/half-down Hairstyles for Long and Medium Hair"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "Life Insurance And Pregnancy: A Working Mom’s Guide"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Business")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "The Best Homemade Masks for Face (keep the Pimples Away)"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "10 Life-Changing Hacks Every Working Mom Should Know"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "tab-pane fade",
-                attrs: {
-                  id: "pills-trending",
-                  role: "tabpanel",
-                  "aria-labelledby": "pills-trending-tab",
-                },
-              },
-              [
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "9 Half-up/half-down Hairstyles for Long and Medium Hair"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "Life Insurance And Pregnancy: A Working Mom’s Guide"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "How to Avoid Distraction and Stay Focused During Video Calls?"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Business")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "The Best Homemade Masks for Face (keep the Pimples Away)"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "10 Life-Changing Hacks Every Working Mom Should Know"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "tab-pane fade",
-                attrs: {
-                  id: "pills-latest",
-                  role: "tabpanel",
-                  "aria-labelledby": "pills-latest-tab",
-                },
-              },
-              [
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "Life Insurance And Pregnancy: A Working Mom’s Guide"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Business")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "The Best Homemade Masks for Face (keep the Pimples Away)"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "10 Life-Changing Hacks Every Working Mom Should Know"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "How to Avoid Distraction and Stay Focused During Video Calls?"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "9 Half-up/half-down Hairstyles for Long and Medium Hair"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-              ]
-            ),
-          ]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "aside-block" }, [
-        _c("h3", { staticClass: "aside-title" }, [_vm._v("Video")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "video-post" }, [
+    return _c("div", { staticClass: "aside-block" }, [
+      _c(
+        "ul",
+        {
+          staticClass: "nav nav-pills custom-tab-nav mb-4",
+          attrs: { id: "pills-tab", role: "tablist" },
+        },
+        [
           _c(
-            "a",
-            {
-              staticClass: "glightbox link-video",
-              attrs: { href: "https://www.youtube.com/watch?v=AiFfDjmd0jU" },
-            },
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
             [
-              _c("span", { staticClass: "bi-play-fill" }),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "img-fluid",
-                attrs: { src: "assets/img/post-landscape-5.jpg", alt: "" },
-              }),
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link active",
+                  attrs: {
+                    id: "pills-popular-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-popular",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-popular",
+                    "aria-selected": "true",
+                  },
+                },
+                [_vm._v("Popular")]
+              ),
             ]
           ),
-        ]),
-      ]),
+          _vm._v(" "),
+          _c(
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link",
+                  attrs: {
+                    id: "pills-trending-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-trending",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-trending",
+                    "aria-selected": "false",
+                  },
+                },
+                [_vm._v("Trending")]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link",
+                  attrs: {
+                    id: "pills-latest-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-latest",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-latest",
+                    "aria-selected": "false",
+                  },
+                },
+                [_vm._v("Latest")]
+              ),
+            ]
+          ),
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "aside-block" }, [
-        _c("h3", { staticClass: "aside-title" }, [_vm._v("Categories")]),
-        _vm._v(" "),
-        _c("ul", { staticClass: "aside-links list-unstyled" }, [
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Business"),
-            ]),
-          ]),
+      _c(
+        "div",
+        { staticClass: "tab-content", attrs: { id: "pills-tabContent" } },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade show active",
+              attrs: {
+                id: "pills-popular",
+                role: "tabpanel",
+                "aria-labelledby": "pills-popular-tab",
+              },
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
           _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Culture"),
-            ]),
-          ]),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "pills-trending",
+                role: "tabpanel",
+                "aria-labelledby": "pills-trending-tab",
+              },
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
           _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Sport"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Food"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Politics"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Celebrity"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Startups"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Travel"),
-            ]),
-          ]),
-        ]),
-      ]),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "pills-latest",
+                role: "tabpanel",
+                "aria-labelledby": "pills-latest-tab",
+              },
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "aside-block" }, [
+      _c("h3", { staticClass: "aside-title" }, [_vm._v("Video")]),
       _vm._v(" "),
-      _c("div", { staticClass: "aside-block" }, [
-        _c("h3", { staticClass: "aside-title" }, [_vm._v("Tags")]),
+      _c("div", { staticClass: "video-post" }, [
+        _c(
+          "a",
+          {
+            staticClass: "glightbox link-video",
+            attrs: { href: "https://www.youtube.com/watch?v=AiFfDjmd0jU" },
+          },
+          [
+            _c("span", { staticClass: "bi-play-fill" }),
+            _vm._v(" "),
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "assets/img/post-landscape-5.jpg", alt: "" },
+            }),
+          ]
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "aside-block" }, [
+      _c("h3", { staticClass: "aside-title" }, [_vm._v("Tags")]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "aside-tags list-unstyled" }, [
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Business")]),
+        ]),
         _vm._v(" "),
-        _c("ul", { staticClass: "aside-tags list-unstyled" }, [
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Business")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Culture")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Sport")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Food")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Politics")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _vm._v("Celebrity"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Startups")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Travel")]),
-          ]),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Culture")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Sport")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Food")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Politics")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Celebrity")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Startups")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Travel")]),
         ]),
       ]),
     ])
@@ -29504,7 +29949,12 @@ var render = function () {
           ]
         ),
         _vm._v(" "),
-        _vm._m(2),
+        _c(
+          "div",
+          { staticClass: "col-md-3" },
+          [_vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("Categories")],
+          1
+        ),
       ]),
     ]),
   ])
@@ -29588,651 +30038,1303 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-3" }, [
-      _c("div", { staticClass: "aside-block" }, [
+    return _c("div", { staticClass: "aside-block" }, [
+      _c(
+        "ul",
+        {
+          staticClass: "nav nav-pills custom-tab-nav mb-4",
+          attrs: { id: "pills-tab", role: "tablist" },
+        },
+        [
+          _c(
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link active",
+                  attrs: {
+                    id: "pills-popular-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-popular",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-popular",
+                    "aria-selected": "true",
+                  },
+                },
+                [_vm._v("Popular")]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link",
+                  attrs: {
+                    id: "pills-trending-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-trending",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-trending",
+                    "aria-selected": "false",
+                  },
+                },
+                [_vm._v("Trending")]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link",
+                  attrs: {
+                    id: "pills-latest-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-latest",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-latest",
+                    "aria-selected": "false",
+                  },
+                },
+                [_vm._v("Latest")]
+              ),
+            ]
+          ),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "tab-content", attrs: { id: "pills-tabContent" } },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade show active",
+              attrs: {
+                id: "pills-popular",
+                role: "tabpanel",
+                "aria-labelledby": "pills-popular-tab",
+              },
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "pills-trending",
+                role: "tabpanel",
+                "aria-labelledby": "pills-trending-tab",
+              },
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "pills-latest",
+                role: "tabpanel",
+                "aria-labelledby": "pills-latest-tab",
+              },
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "aside-block" }, [
+      _c("h3", { staticClass: "aside-title" }, [_vm._v("Video")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "video-post" }, [
         _c(
-          "ul",
+          "a",
           {
-            staticClass: "nav nav-pills custom-tab-nav mb-4",
-            attrs: { id: "pills-tab", role: "tablist" },
+            staticClass: "glightbox link-video",
+            attrs: { href: "https://www.youtube.com/watch?v=AiFfDjmd0jU" },
           },
           [
-            _c(
-              "li",
-              { staticClass: "nav-item", attrs: { role: "presentation" } },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass: "nav-link active",
-                    attrs: {
-                      id: "pills-popular-tab",
-                      "data-bs-toggle": "pill",
-                      "data-bs-target": "#pills-popular",
-                      type: "button",
-                      role: "tab",
-                      "aria-controls": "pills-popular",
-                      "aria-selected": "true",
-                    },
-                  },
-                  [_vm._v("Popular")]
-                ),
-              ]
-            ),
+            _c("span", { staticClass: "bi-play-fill" }),
             _vm._v(" "),
-            _c(
-              "li",
-              { staticClass: "nav-item", attrs: { role: "presentation" } },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass: "nav-link",
-                    attrs: {
-                      id: "pills-trending-tab",
-                      "data-bs-toggle": "pill",
-                      "data-bs-target": "#pills-trending",
-                      type: "button",
-                      role: "tab",
-                      "aria-controls": "pills-trending",
-                      "aria-selected": "false",
-                    },
-                  },
-                  [_vm._v("Trending")]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "li",
-              { staticClass: "nav-item", attrs: { role: "presentation" } },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass: "nav-link",
-                    attrs: {
-                      id: "pills-latest-tab",
-                      "data-bs-toggle": "pill",
-                      "data-bs-target": "#pills-latest",
-                      type: "button",
-                      role: "tab",
-                      "aria-controls": "pills-latest",
-                      "aria-selected": "false",
-                    },
-                  },
-                  [_vm._v("Latest")]
-                ),
-              ]
-            ),
+            _c("img", {
+              attrs: {
+                src: "a img-fluidssets/img/post-landscape-5.jpg",
+                alt: "",
+              },
+            }),
           ]
+        ),
+      ]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PostsByCategory.vue?vue&type=template&id=60f169e6&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/PostsByCategory.vue?vue&type=template&id=60f169e6& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-md-9", attrs: { "data-aos": "fade-up" } },
+          [
+            _c("h3", { staticClass: "category-title" }, [
+              _vm._v("Category: Business"),
+            ]),
+            _vm._v(" "),
+            _vm._l(_vm.posts, function (post, index) {
+              return _c(
+                "div",
+                { key: index, staticClass: "d-md-flex post-entry-2 half" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "me-4 thumbnail", attrs: { to: post.path } },
+                    [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: { src: post.image, alt: "" },
+                      }),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("div", { staticClass: "post-meta" }, [
+                      _c("span", { staticClass: "date" }, [
+                        _vm._v(_vm._s(post.category.name)),
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                      _vm._v(" "),
+                      _c("span", [_vm._v(_vm._s(post.added))]),
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      [
+                        _c("router-link", { attrs: { to: post.path } }, [
+                          _vm._v(" \n                 " + _vm._s(post.title)),
+                        ]),
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                 " +
+                          _vm._s(post.content.substr(0, 200)) +
+                          " ... \n            "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "d-flex align-items-center author" },
+                      [
+                        _vm._m(0, true),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "name" }, [
+                          _c("h3", { staticClass: "m-0 p-0" }, [
+                            _vm._v(_vm._s(post.user.name)),
+                          ]),
+                        ]),
+                      ]
+                    ),
+                  ]),
+                ],
+                1
+              )
+            }),
+            _vm._v(" "),
+            _vm._m(1),
+          ],
+          2
         ),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "tab-content", attrs: { id: "pills-tabContent" } },
+          { staticClass: "col-md-3" },
           [
-            _c(
-              "div",
-              {
-                staticClass: "tab-pane fade show active",
-                attrs: {
-                  id: "pills-popular",
-                  role: "tabpanel",
-                  "aria-labelledby": "pills-popular-tab",
-                },
-              },
-              [
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "How to Avoid Distraction and Stay Focused During Video Calls?"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "9 Half-up/half-down Hairstyles for Long and Medium Hair"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "Life Insurance And Pregnancy: A Working Mom’s Guide"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Business")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "The Best Homemade Masks for Face (keep the Pimples Away)"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "10 Life-Changing Hacks Every Working Mom Should Know"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-              ]
-            ),
+            _vm._m(2),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "tab-pane fade",
-                attrs: {
-                  id: "pills-trending",
-                  role: "tabpanel",
-                  "aria-labelledby": "pills-trending-tab",
-                },
-              },
-              [
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "9 Half-up/half-down Hairstyles for Long and Medium Hair"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "Life Insurance And Pregnancy: A Working Mom’s Guide"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "How to Avoid Distraction and Stay Focused During Video Calls?"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Business")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "The Best Homemade Masks for Face (keep the Pimples Away)"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
-                  _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "10 Life-Changing Hacks Every Working Mom Should Know"
-                      ),
-                    ]),
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
-                  ]),
-                ]),
-              ]
-            ),
+            _vm._m(3),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "tab-pane fade",
-                attrs: {
-                  id: "pills-latest",
-                  role: "tabpanel",
-                  "aria-labelledby": "pills-latest-tab",
+            _c("Categories"),
+            _vm._v(" "),
+            _vm._m(4),
+          ],
+          1
+        ),
+      ]),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "photo" }, [
+      _c("img", {
+        staticClass: "img-fluid",
+        attrs: { src: "assets/img/person-2.jpg", alt: "" },
+      }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-start py-4" }, [
+      _c("div", { staticClass: "custom-pagination" }, [
+        _c("a", { staticClass: "prev", attrs: { href: "#" } }, [
+          _vm._v("Prevous"),
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "active", attrs: { href: "#" } }, [_vm._v("1")]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [_vm._v("2")]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [_vm._v("3")]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [_vm._v("4")]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [_vm._v("5")]),
+        _vm._v(" "),
+        _c("a", { staticClass: "next", attrs: { href: "#" } }, [
+          _vm._v("Next"),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "aside-block" }, [
+      _c(
+        "ul",
+        {
+          staticClass: "nav nav-pills custom-tab-nav mb-4",
+          attrs: { id: "pills-tab", role: "tablist" },
+        },
+        [
+          _c(
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link active",
+                  attrs: {
+                    id: "pills-popular-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-popular",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-popular",
+                    "aria-selected": "true",
+                  },
                 },
+                [_vm._v("Popular")]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link",
+                  attrs: {
+                    id: "pills-trending-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-trending",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-trending",
+                    "aria-selected": "false",
+                  },
+                },
+                [_vm._v("Trending")]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            { staticClass: "nav-item", attrs: { role: "presentation" } },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "nav-link",
+                  attrs: {
+                    id: "pills-latest-tab",
+                    "data-bs-toggle": "pill",
+                    "data-bs-target": "#pills-latest",
+                    type: "button",
+                    role: "tab",
+                    "aria-controls": "pills-latest",
+                    "aria-selected": "false",
+                  },
+                },
+                [_vm._v("Latest")]
+              ),
+            ]
+          ),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "tab-content", attrs: { id: "pills-tabContent" } },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade show active",
+              attrs: {
+                id: "pills-popular",
+                role: "tabpanel",
+                "aria-labelledby": "pills-popular-tab",
               },
-              [
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
                   _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "Life Insurance And Pregnancy: A Working Mom’s Guide"
-                      ),
-                    ]),
-                  ]),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
                   _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
                   ]),
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Business")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
                   _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "The Best Homemade Masks for Face (keep the Pimples Away)"
-                      ),
-                    ]),
-                  ]),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
                   _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
                   ]),
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
                   _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "10 Life-Changing Hacks Every Working Mom Should Know"
-                      ),
-                    ]),
-                  ]),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
                   _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
                   ]),
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
                   _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "How to Avoid Distraction and Stay Focused During Video Calls?"
-                      ),
-                    ]),
-                  ]),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
                   _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
                   ]),
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
                   _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
-                      ),
-                    ]),
-                  ]),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
                   _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
                   ]),
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "post-entry-1 border-bottom" }, [
-                  _c("div", { staticClass: "post-meta" }, [
-                    _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
-                    _vm._v(" "),
-                    _c("span", [_vm._v("Jul 5th '22")]),
-                  ]),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
                   _vm._v(" "),
-                  _c("h2", { staticClass: "mb-2" }, [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(
-                        "9 Half-up/half-down Hairstyles for Long and Medium Hair"
-                      ),
-                    ]),
-                  ]),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
                   _vm._v(" "),
-                  _c("span", { staticClass: "author mb-3 d-block" }, [
-                    _vm._v("Jenny Wilson"),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
                   ]),
                 ]),
-              ]
-            ),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "pills-trending",
+                role: "tabpanel",
+                "aria-labelledby": "pills-trending-tab",
+              },
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "pills-latest",
+                role: "tabpanel",
+                "aria-labelledby": "pills-latest-tab",
+              },
+            },
+            [
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "Life Insurance And Pregnancy: A Working Mom’s Guide"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Business")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "The Best Homemade Masks for Face (keep the Pimples Away)"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "10 Life-Changing Hacks Every Working Mom Should Know"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Sport")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "How to Avoid Distraction and Stay Focused During Video Calls?"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Lifestyle")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "post-entry-1 border-bottom" }, [
+                _c("div", { staticClass: "post-meta" }, [
+                  _c("span", { staticClass: "date" }, [_vm._v("Culture")]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "mx-1" }, [_vm._v("•")]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Jul 5th '22")]),
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "mb-2" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v(
+                      "9 Half-up/half-down Hairstyles for Long and Medium Hair"
+                    ),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "author mb-3 d-block" }, [
+                  _vm._v("Jenny Wilson"),
+                ]),
+              ]),
+            ]
+          ),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "aside-block" }, [
+      _c("h3", { staticClass: "aside-title" }, [_vm._v("Video")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "video-post" }, [
+        _c(
+          "a",
+          {
+            staticClass: "glightbox link-video",
+            attrs: { href: "https://www.youtube.com/watch?v=AiFfDjmd0jU" },
+          },
+          [
+            _c("span", { staticClass: "bi-play-fill" }),
+            _vm._v(" "),
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "assets/img/post-landscape-5.jpg", alt: "" },
+            }),
           ]
         ),
       ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "aside-block" }, [
+      _c("h3", { staticClass: "aside-title" }, [_vm._v("Tags")]),
       _vm._v(" "),
-      _c("div", { staticClass: "aside-block" }, [
-        _c("h3", { staticClass: "aside-title" }, [_vm._v("Video")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "video-post" }, [
-          _c(
-            "a",
-            {
-              staticClass: "glightbox link-video",
-              attrs: { href: "https://www.youtube.com/watch?v=AiFfDjmd0jU" },
-            },
-            [
-              _c("span", { staticClass: "bi-play-fill" }),
-              _vm._v(" "),
-              _c("img", {
-                attrs: {
-                  src: "a img-fluidssets/img/post-landscape-5.jpg",
-                  alt: "",
-                },
-              }),
-            ]
-          ),
+      _c("ul", { staticClass: "aside-tags list-unstyled" }, [
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Business")]),
         ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "aside-block" }, [
-        _c("h3", { staticClass: "aside-title" }, [_vm._v("Categories")]),
         _vm._v(" "),
-        _c("ul", { staticClass: "aside-links list-unstyled" }, [
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Business"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Culture"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Sport"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Food"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Politics"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Celebrity"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Startups"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _c("i", { staticClass: "bi bi-chevron-right" }),
-              _vm._v(" Travel"),
-            ]),
-          ]),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Culture")]),
         ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "aside-block" }, [
-        _c("h3", { staticClass: "aside-title" }, [_vm._v("Tags")]),
         _vm._v(" "),
-        _c("ul", { staticClass: "aside-tags list-unstyled" }, [
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Business")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Culture")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Sport")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Food")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Politics")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [
-              _vm._v("Celebrity"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Startups")]),
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "category.html" } }, [_vm._v("Travel")]),
-          ]),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Sport")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Food")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Politics")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Celebrity")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Startups")]),
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("Travel")]),
         ]),
       ]),
     ])
@@ -45371,6 +46473,18 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
 /******/ 		};
 /******/ 	})();
 /******/ 	

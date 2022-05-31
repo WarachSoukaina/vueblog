@@ -125,4 +125,23 @@ class PostController extends Controller
     {
         //
     }
+
+    public function postsByCategory($slug)
+    {
+        $results = [];
+        $category= Category::where('slug', $slug)->first();
+
+        $posts = Post::where('category_id',$category->id)->get();
+
+        foreach ($posts as $post) {
+            $post->setAttribute('user',$post->user);
+            $post->setAttribute('added',Carbon::parse($post->created_at)->diffForHumans());
+            $post->setAttribute('path','/post/'.$post->slug);
+            $post->setAttribute('category',$post->category);
+        }
+       
+        // $results = [$categoryname,$posts];
+        // $jsnres = json_encode( $results);
+        return response()->json( $posts );
+    }
 }
