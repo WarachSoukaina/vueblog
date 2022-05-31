@@ -5,9 +5,17 @@ namespace App\Http\Controllers;
 use App\Models\Comment;
 use App\Http\Requests\StoreCommentRequest;
 use App\Http\Requests\UpdateCommentRequest;
+use App\Models\User;
+use Carbon\Carbon;
+
+
 
 class CommentController extends Controller
 {
+
+
+
+    
     /**
      * Display a listing of the resource.
      *
@@ -36,7 +44,20 @@ class CommentController extends Controller
      */
     public function store(StoreCommentRequest $request)
     {
-        //
+        $comment = Comment::create([
+            'post_id' => $request->post_id,
+            'content' => $request->content,
+            'user_id' => 1
+
+        ]);
+
+        $user = User::find($comment->user_id)->first();
+
+        return response()->json([
+            'content'=> $comment->content,
+            'created_at'=>$comment->created_at->diffForHumans(),
+            'user'=>$user->name
+        ]);
     }
 
     /**

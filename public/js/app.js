@@ -5818,22 +5818,52 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      post: ''
+      post: '',
+      comment: ''
     };
   },
   components: {
     Categories: _Categories_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  methods: {
+    addComment: function addComment(id) {
+      var _this = this;
+
+      axios.post('/api/comments', {
+        post_id: id,
+        content: this.comment
+      }).then(function (response) {
+        _this.post.comments_count += 1;
+
+        _this.post.comments.unshift(response.data);
+
+        _this.comment = null;
+      })["catch"](function (err) {
+        return console.log(err);
+      });
+    }
+  },
   created: function created() {
-    var _this = this;
+    var _this2 = this;
 
     axios.get('/api/posts/' + this.$route.params.slug).then(function (response) {
       console.log(response.data);
-      _this.post = response.data;
+      _this2.post = response.data;
     })["catch"](function (err) {
       return console.log(err);
     });
@@ -29906,7 +29936,7 @@ var render = function () {
                     _vm._l(_vm.post.comments, function (comment, index) {
                       return _c(
                         "div",
-                        { key: index, staticClass: "comment d-flex" },
+                        { key: index, staticClass: "comment d-flex mb-2" },
                         [
                           _vm._m(0, true),
                           _vm._v(" "),
@@ -29945,14 +29975,63 @@ var render = function () {
                 : _vm._e(),
             ]),
             _vm._v(" "),
-            _vm._m(1),
+            _c("div", { staticClass: "row justify-content-center mt-5" }, [
+              _c("div", { staticClass: "col-lg-12" }, [
+                _c("h5", { staticClass: "comment-title" }, [
+                  _vm._v("Leave a Comment"),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-12 mb-3" }, [
+                    _c("textarea", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.comment,
+                          expression: "comment",
+                        },
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        id: "comment-message",
+                        placeholder: "Enter your name",
+                        cols: "30",
+                        rows: "10",
+                      },
+                      domProps: { value: _vm.comment },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.comment = $event.target.value
+                        },
+                      },
+                    }),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-12" }, [
+                    _c("input", {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button", value: "Post comment" },
+                      on: {
+                        click: function ($event) {
+                          return _vm.addComment(_vm.post.id)
+                        },
+                      },
+                    }),
+                  ]),
+                ]),
+              ]),
+            ]),
           ]
         ),
         _vm._v(" "),
         _c(
           "div",
           { staticClass: "col-md-3" },
-          [_vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c("Categories")],
+          [_vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("Categories")],
           1
         ),
       ]),
@@ -29970,67 +30049,6 @@ var staticRenderFns = [
           staticClass: "avatar-img img-fluid",
           attrs: { src: "/assets/img/person-2.jpg", alt: "" },
         }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center mt-5" }, [
-      _c("div", { staticClass: "col-lg-12" }, [
-        _c("h5", { staticClass: "comment-title" }, [_vm._v("Leave a Comment")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-lg-6 mb-3" }, [
-            _c("label", { attrs: { for: "comment-name" } }, [_vm._v("Name")]),
-            _vm._v(" "),
-            _c("input", {
-              staticClass: "form-control",
-              attrs: {
-                type: "text",
-                id: "comment-name",
-                placeholder: "Enter your name",
-              },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-lg-6 mb-3" }, [
-            _c("label", { attrs: { for: "comment-email" } }, [_vm._v("Email")]),
-            _vm._v(" "),
-            _c("input", {
-              staticClass: "form-control",
-              attrs: {
-                type: "text",
-                id: "comment-email",
-                placeholder: "Enter your email",
-              },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-12 mb-3" }, [
-            _c("label", { attrs: { for: "comment-message" } }, [
-              _vm._v("Message"),
-            ]),
-            _vm._v(" "),
-            _c("textarea", {
-              staticClass: "form-control",
-              attrs: {
-                id: "comment-message",
-                placeholder: "Enter your name",
-                cols: "30",
-                rows: "10",
-              },
-            }),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-12" }, [
-            _c("input", {
-              staticClass: "btn btn-primary",
-              attrs: { type: "submit", value: "Post comment" },
-            }),
-          ]),
-        ]),
       ]),
     ])
   },

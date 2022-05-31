@@ -28,7 +28,7 @@
               <h5 class="comment-title py-4"> {{ post.comments_count }} Comments</h5>
               <div v-if="post.comments_count > 0">
 
-              <div v-for="(comment,index) in post.comments" :key="index" class="comment d-flex">
+              <div v-for="(comment,index) in post.comments" :key="index" class="comment d-flex mb-2">
                 <div class="flex-shrink-0">
                   <div class="avatar avatar-sm rounded-circle">
                     <img class="avatar-img img-fluid" src="/assets/img/person-2.jpg" alt="" >
@@ -56,21 +56,32 @@
               <div class="col-lg-12">
                 <h5 class="comment-title">Leave a Comment</h5>
                 <div class="row">
-                  <div class="col-lg-6 mb-3">
+                  <!-- <div class="col-lg-6 mb-3">
                     <label for="comment-name">Name</label>
                     <input type="text" class="form-control" id="comment-name" placeholder="Enter your name">
                   </div>
                   <div class="col-lg-6 mb-3">
                     <label for="comment-email">Email</label>
                     <input type="text" class="form-control" id="comment-email" placeholder="Enter your email">
-                  </div>
-                  <div class="col-12 mb-3">
-                    <label for="comment-message">Message</label>
+                  </div> -->
 
-                    <textarea class="form-control" id="comment-message" placeholder="Enter your name" cols="30" rows="10"></textarea>
+                  <div class="col-12 mb-3">
+                    <!-- <label for="comment-message">Message</label> -->
+
+                    <textarea
+                     class="form-control"
+                      id="comment-message" 
+                      placeholder="Enter your name"
+                       cols="30" rows="10"
+                       v-model="comment"
+                       ></textarea>
                   </div>
                   <div class="col-12">
-                    <input type="submit" class="btn btn-primary" value="Post comment">
+                    <input type="button" 
+                    class="btn btn-primary" 
+                    value="Post comment"
+                    @click="addComment(post.id)"
+                    >
                   </div>
                 </div>
               </div>
@@ -246,11 +257,26 @@ import Categories from './Categories.vue';
 export default {
     data() {
         return {
-            post : ''
+            post : '',
+            comment : ''
         }
     },
     components: {
       Categories
+    },
+    methods: {
+      addComment(id){
+        axios.post('/api/comments',{
+          post_id : id,
+          content :  this.comment
+        }) .then (response => {
+          
+            this.post.comments_count +=1 ;
+            this.post.comments.unshift(response.data);
+            this.comment = null
+
+        }).catch(err =>console.log(err));
+      }
     },
     created() {
         axios.get('/api/posts/'+this.$route.params.slug)
