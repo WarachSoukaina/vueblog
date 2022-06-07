@@ -688,7 +688,7 @@ section {
   border-bottom: none;
 }
 
-.custom-pagination a {
+.custom-pagination ul{
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -699,7 +699,7 @@ section {
   margin: 5px;
   transition: 0.3s all ease;
 }
-.custom-pagination a.active {
+.custom-pagination ul li a.active {
   background: var(--color-black);
   color: var(--color-white);
 }
